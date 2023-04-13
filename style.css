@@ -1,4 +1,56 @@
 
+.cab{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+
+.nav {
+    display: flex;
+    margin-right: 5px;
+}
+
+
+
+.nav {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav :hover {
+    background: #3f3f3f;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
 .todo{
 	background-color: #baefff;
 }
@@ -12,6 +64,26 @@
 	  font-style: italic;
 	  font-size:40px;
 	  margin-left: 15px;
+
+}
+
+.fin{
+	font-style: italic;
+	font-size:20px;
+	 margin-left: 500px;
+
+}
+.fin1{
+	font-style: italic;
+	font-size:20px;
+	 margin-left: 690px;
+
+}
+
+.fin2{
+	font-style: italic;
+	font-size:20px;
+	 margin-left: 620px;
 
 }
 
@@ -348,7 +420,7 @@
 }
 
 .uu{
-	margin-left: 2450px;
+	margin-left: 240px;
 }
 
 
@@ -375,3 +447,58 @@
 	font-size:20px ;
 	margin-left: 35px;
   }
+
+
+
+
+  .bt {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 10px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  margin-left: 620px;
+ }
+
+
+
+ .bt::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+
+ .bt:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+
+ .bt:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
